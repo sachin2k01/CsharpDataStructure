@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DataStructure.StackDs</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,8 +48,9 @@
   <ItemGroup>
     <Compile Include="LinkedList.cs" />
     <Compile Include="Node.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="LinkedListDS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackDs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

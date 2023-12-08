@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataStructure
 {
@@ -57,11 +54,13 @@ namespace DataStructure
             if (Last.Next == existingNode)  // adding last thrn repoint last to newnode
             {
                 Last = newNode;
+                return;
 
             }
             newNode.Next = existingNode;          // NewNode Next-> points to existing Node
             existingNode.Next = newNode;              //existing Next=> new node
             this.Count++;
+            return;
         }
 
         public Node<T> Find(T target)

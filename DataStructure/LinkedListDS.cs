@@ -7,7 +7,7 @@ using DataStructure;
 
 namespace DataStructure
 {
-    class program
+    class LinkedListDS
     {
         static void Main(string[] args)
         {
@@ -24,6 +24,12 @@ namespace DataStructure
 
             list.Traverse();
 
+            //Console.WriteLine("After Node d");
+            //list.AddAfter(new Node<string>("Data Structure"), c);
+            
+
+            list.RemoveFirst();
+            list.Traverse();
 
         }
 
