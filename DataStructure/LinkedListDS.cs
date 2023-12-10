@@ -23,27 +23,30 @@ namespace DataStructure
             Console.WriteLine("ELements: ");
             ls.Display();
 
-            Console.WriteLine("ELements After Deletion: ");
-            ls.DeleteLast();
-            ls.Display();
+            //Console.WriteLine("ELements After Deletion: ");
+            //ls.DeleteLast();
+            //ls.Display();
 
-            Console.WriteLine("ELements After front Deletion: ");
-            ls.DeleteFront();
-            ls.Display();
+            //Console.WriteLine("ELements After front Deletion: ");
+            //ls.DeleteFront();
+            //ls.Display();
 
-            Console.WriteLine("After Insert at front");
-            ls.InsertFront(88);
-            ls.Display();
+            //Console.WriteLine("After Insert at front");
+            //ls.InsertFront(88);
+            //ls.Display();
 
-            ls.Insert(66);
+            //ls.Insert(66);
 
-            Console.WriteLine("After Insert at rear");
-            ls.InsertRear(11);
-            ls.Display();
+            //Console.WriteLine("After Insert at rear");
+            //ls.InsertRear(11);
+            //ls.Display();
 
-            Console.WriteLine("After Delete by value ");
-            ls.DeleteByValue(15);
-            ls.Display();
+            //Console.WriteLine("After Delete by value ");
+            //ls.DeleteByValue(15);
+            //ls.Display();
+
+            Console.WriteLine("Search a Node in List");
+            ls.SearchNode(34);
 
         }
     }

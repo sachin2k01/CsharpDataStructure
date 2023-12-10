@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,15 @@ namespace DataStructure
             }
             else
             {
-                Node lastNode = GetLastNode();
-                lastNode.next = newNode;
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = newNode;
             }
         }
+
 
         public void InsertFront(int elem)
         {
@@ -60,15 +66,7 @@ namespace DataStructure
 
 
 
-        public Node GetLastNode()
-        {
-            Node temp=head;
-            while(temp.next != null)
-            {
-                temp = temp.next;
-            }
-            return temp;
-        }
+        
 
         public void Display()
         {
@@ -94,8 +92,7 @@ namespace DataStructure
 
         public void DeleteFront()
         {
-            Node temp;
-            if(head == null)
+            if (head == null)
             {
                 Console.WriteLine("List is Empty") ;
             }
@@ -165,6 +162,37 @@ namespace DataStructure
             }
 
             prev.next = temp.next;
+        }
+
+        public void SearchNode(int key)
+        {
+            if(head==null)
+            {
+                Console.WriteLine("No Element in List to Search");
+            }
+            else
+            {
+                Node temp=head;
+                bool found=false;
+                while(temp!=null)
+                {
+                    if(key==temp.data)
+                    {
+                        found = true;
+                        break;
+                    }
+                    temp = temp.next;                   
+                }
+                if(found==true)
+                {
+                    Console.WriteLine("ELement is Found");
+                }
+                else
+                {
+                    Console.WriteLine("ELement Not Found");
+                }
+            }
+
         }
 
     }
