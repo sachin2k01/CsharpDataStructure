@@ -41,6 +41,10 @@ namespace DataStructure
             ls.InsertRear(11);
             ls.Display();
 
+            Console.WriteLine("After Delete by value ");
+            ls.DeleteByValue(15);
+            ls.Display();
+
         }
     }
 }

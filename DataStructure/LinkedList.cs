@@ -134,5 +134,38 @@ namespace DataStructure
 
             }
         }
+
+        public void DeleteByValue(int value)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty. Deletion not possible.");
+                return;
+            }
+
+            Node temp = head;
+            Node prev = null;
+
+            if (temp.data == value)
+            {
+                head = temp.next;
+                return;
+            }
+
+            while (temp != null && temp.data != value)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+
+            if (temp == null)
+            {
+                Console.WriteLine("Element not found. Deletion not possible.");
+                return;
+            }
+
+            prev.next = temp.next;
+        }
+
     }
 }
