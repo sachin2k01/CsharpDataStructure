@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SearchingAlgorithm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af7c9057990e97cff05e566af5b1c87aeec66682")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d468172beb096d3cbb911da4f94e5f25f395749f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SearchingAlgorithm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SearchingAlgorithm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
